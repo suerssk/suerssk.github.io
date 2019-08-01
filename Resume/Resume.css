@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1240px;
+    height: auto;
+    margin: 0 auto;
+    /* border: 1px solid #e9e9e9; */
+    padding: 70px;
+    background-color: #fff;
+}
+.wrapper .container {
+    width: 1100px;
+    height: auto;
+    box-shadow: 0 0 40px #BDBDBD;
+    position: relative;
+}
+.resetEditStyle .baseStyle {
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+}
+.baseStyle {
+    width: 1100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-top: 50px;
+    background: url("images/j1_bg.png");
+}
+.baseStyle .divLeft {
+    float: left;
+    width: 281px;
+    padding: 0 2px;
+}
+.baseStyle .headDiv {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    border: 6px solid rgba(255,255,255,0.9);
+    position: relative;
+    overflow: hidden;
+}
+.baseStyle .headDiv img {
+    display: block;
+    cursor: pointer;
+    height: 200px;
+}
+.baseStyle .divLeft .msgDiv {
+    margin-top: 50px;
+}
+.baseStyle .divLeft .msgDiv img {
+    height: 16px;
+    margin-left: 20px;
+}
+.baseStyle .divLeft .msgDiv img,
+                            span {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #fff;
+    margin-top: 10px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+.baseStyle .divLeft .skillDiv {
+    margin-top: 50px;
+    padding: 20px;
+    min-height: 50px;
+}
+/* .baseStyle .divLeft .skillDiv .skillList span {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #fff;
+    margin-top: 10px;
+} */
+.baseStyle .divLeft .skillDiv .skillList .skill {
+    width: 200px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #ededed;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.baseStyle .divLeft .skillDiv .skillList .skill .bar {
+    width: 160px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ff6700;
+}
+.baseStyle .divLeft .hobbyDiv {
+    margin: 50px auto;
+}
+.hobbyDiv dl dt span {
+    display: block;
+    margin: 20px;
+}
+.baseStyle .hobbyDiv dl dd .hobbyicon {
+    width: 80px;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    margin-left: 20px;  
+    position: relative;
+    border: 1px solid transparent;
+}
+.baseStyle .hobbyDiv dl dd .hobbyicon span{
+    display: inline-block;
+    margin-left: 20px;
+}
+.hobbyDiv img {
+    height: 50px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+/* 清除浮动 */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* 右侧 */
+.divRight {
+    float: right;
+    width: 815px;
+    /* position: absolute;
+    left: 281px;
+    top: 50px; */
+}
+.baseStyle .divRight .nameDiv {
+    padding: 20px 40px;
+    margin-top: -38px;
+}
+.baseStyle .divRight .nameDiv h1, 
+.baseStyle .divRight .nameDiv h3 {
+    color: #254665;
+}
+.baseStyle .divRight .nameDiv h1 {
+    font-size: 48px;
+}
+.baseStyle .divRight .nameDiv h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.baseStyle .divRight .expDiv, 
+                     .eduDiv,
+                     .jobDiv,
+                     .proDiv {
+    padding: 10px 40px;
+}
+.baseStyle .divRight dl dt img {
+    height: 65px;
+    line-height: 65px;
+    float: left;
+}
+.baseStyle .divRight  dl dt span {
+    color: #254665;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.baseStyle .divRight .line {
+    width: 620px;
+    border-top-style: solid;
+    border-top-width: 4px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+.baseStyle .divRight div dl dd span {
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    margin: 5px 0 0;
+}
+.baseStyle .divRight .expDiv dl dt span {
+    width: 180px;
+}
+.baseStyle .divRight .expDiv dd .conTitle .job {
+    margin-left: 65px;
+}
+
+.baseStyle .divRight dl dt .project {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
