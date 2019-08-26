@@ -1,0 +1,783 @@
+@import "reset.css";
+
+/* 通用样式 */
+
+a:link {
+    color: #37a;
+}
+
+a:visited {
+    color: #669;
+}
+
+
+/* 通用样式结束 */
+
+body {
+    padding-top: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header {
+    background: #fff;
+    /* border: 1px solid #ccc; */
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 950px;
+    min-width: 950px;
+    /* outline: 1px solid #000; */
+    margin: 0 auto;
+}
+
+.header .container {
+    margin-bottom: 25px;
+}
+
+.header .container .logo,
+.header .container .search {
+    float: left;
+}
+
+.header .container .links {
+    float: right;
+}
+
+.header .container .logo {
+    width: 160px;
+    height: 34px;
+    background: url("../img/logo_db.png") left top/100% no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.header .container .logo a {
+    display: block;
+    height: 34px;
+    width: 100%;
+}
+
+
+/* 搜索框 */
+
+.header .container .search {
+    width: 270px;
+    height: 31px;
+    line-height: 30px;
+    position: relative;
+    border: 1px solid #c3c3c3;
+}
+
+.header .container .search input {
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.header .container .search input::placeholder {
+    color: #ccc;
+}
+
+.header .container .search .btn_search,
+.header .container .search .btn_search input {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header .container .search .btn_search {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.header .container .search .btn_search input {
+    background: transparent;
+    border: none;
+    font-size: 0;
+}
+
+
+/* links */
+
+.header .container .links {
+    height: 30px;
+    /* border: 1px solid #ddd; */
+}
+
+.header .container .links ul li {
+    display: inline-block;
+    /* overflow: hidden; */
+    margin: 5px 0 0 17px;
+}
+
+.header .container .links ul li a {
+    background: transparent url("../img/nav_logo.png") no-repeat left top/463px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+}
+
+.header .container .links ul li .link-book {
+    background-position: 0 0;
+}
+
+.header .container .links ul li .link-movie {
+    background-position: -60px 0;
+}
+
+.header .container .links ul li .link-music {
+    background-position: -120px 0;
+}
+
+.header .container .links ul li .link-group {
+    background-position: -180px 0;
+}
+
+.header .container .links ul li .link-city {
+    background-position: -240px 0;
+}
+
+.header .container .links ul li .link-fm {
+    background-position: -300px 0;
+}
+
+.header .container .links ul li .link-time {
+    background: transparent url("../img/time_nav.png") no-repeat 100% 100%;
+    margin-bottom: 2px;
+}
+
+.header .container .links ul li .link-market {
+    width: 42px;
+    background-position: -421px 0;
+}
+
+
+/* 横幅区 */
+
+.reg_new {
+    background-image: url("../img/reg_new.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 305px) top;
+    /* background-position: calc(50% - 37%) top; */
+    background-color: #edf4ed;
+    line-height: 1.62;
+}
+
+.reg_new .container {
+    overflow: visible;
+    position: relative;
+}
+
+.reg_new .container .login {
+    position: relative;
+    float: right;
+}
+
+
+/* form 表单---重写 */
+
+.reg_new .container .login iframe {
+    height: 300px;
+    width: 300px;
+}
+
+.reg_new .container .app {
+    height: 120px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 475px;
+}
+
+.reg_new .container .app .app-title {
+    font-size: 25px;
+}
+
+.reg_new .container .app .link-box {
+    margin-top: 18px;
+}
+
+.reg_new .container .app .link-box .app-link {
+    display: inline-block;
+    padding: 9px 21px;
+    background-color: #00B51D;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    margin: 0 2px 0 0;
+    line-height: 1;
+}
+
+.reg_new .container .app .link-box .app-qr {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.reg_new .container .app .link-box .app-qr .link-qr {
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+
+/* .reg_new .container .app .link-box .app-qr .link-qr:hover {
+    display: none;
+} */
+
+.reg_new .container .app .link-box .app-qr,
+.reg_new .container .app .link-box .app-qr .link-qr {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.reg_new .container .app .link-box .app-qr .link-qr img {
+    width: 28px;
+    height: 28px;
+}
+
+.reg_new .container .app .link-box .app-qr .qr-expand {
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.reg_new .container .app .link-box .app-qr .qr-expand img {
+    height: 160px;
+    width: 160px;
+}
+
+.reg_new .container .app .link-box .app-qr .qr-expand p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* hotcontent */
+
+.hotcontent {
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.hotcontent a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.hotcontent .container {
+    margin-top: 30px;
+}
+
+.container h3 {
+    color: #072;
+    margin: 0 0 12px 0;
+    font: 15px Arial, Helvetica, sans-serif;
+}
+
+
+/* .container h3 a:hover {
+    color: #fff;
+    background: #37a;
+} */
+
+.container h3 span {
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+
+/* 两栏布局 */
+
+.hotcontent .main {
+    width: 670px;
+    float: left;
+}
+
+.hotcontent .aside {
+    width: 280px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.hotcontent .main .content .albums {
+    margin-right: 30px;
+    float: left;
+    width: 350px;
+    color: #999;
+    font-size: 0;
+}
+
+.hotcontent .main .content .albums .lists {
+    /* border: 1px solid #ccc; */
+    margin: -10px 0 0 -10px;
+}
+
+.hotcontent .main .content .notes {
+    overflow: hidden;
+    width: 240px;
+    line-height: 1.62;
+}
+
+.hotcontent .main .content .lists .item,
+.hotbox .main .content .lists .item img {
+    width: 170px;
+}
+
+.hotcontent .main .content .lists .item {
+    font-size: 12px;
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+}
+
+.hotcontent .main .content .lists .item .pic {
+    display: inline-block;
+    width: 170px;
+    max-width: 170px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.hotcontent .main .content .lists .item span {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+
+/* notes */
+
+.hotcontent .main .content .notes ul li {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.hotcontent .main .content .notes ul li:first-child {
+    margin-top: 0;
+}
+
+.hotcontent .main .content .notes ul li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.hotcontent .container .aside .link-pic img {
+    width: 270px;
+}
+
+.hotcontent .container .aside .online ul li {
+    margin-top: 12px;
+}
+
+.hotcontent .container .aside .online ul li a {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.hotcontent .container .aside .online ul li a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.hotcontent .container .aside .online ul li span.ad {
+    display: inline-block;
+}
+
+.hotcontent .container .aside .online ul li span {
+    display: block;
+    font-size: 13px;
+    color: #aaa;
+}
+
+
+/* 豆瓣时间区 time */
+
+.time {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}
+
+.container .main-title {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.container .main-title h2 {
+    margin-bottom: 12px;
+}
+
+.container .main-title h2 a {
+    color: #494949;
+    font-size: 24px;
+}
+
+.container .main-title a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.container .main-right {
+    overflow: hidden;
+}
+
+.container .main-right h3 a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.time .container .main-right .list ul li {
+    display: inline-block;
+    margin: 0 60px 30px 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+.time .container .main-right .list ul li,
+.time .container .main-right .list ul li .pic img {
+    width: 100px;
+}
+
+.time .container .main-right .list ul li .pic {
+    margin-bottom: 5px;
+}
+
+.time .container .main-right .list ul li .pic a {
+    display: block;
+}
+
+.time .container .main-right .list ul li .pic-title {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.time .container .main-right .list ul li .pic-title:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.time .container .main-right .list ul li .category {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    color: #999;
+}
+
+.time .container .main-right .list ul li .audio,
+.time .container .main-right .list ul li .video {
+    position: relative;
+}
+
+.time .container .main-right .list ul li .audio::after,
+.time .container .main-right .list ul li .video::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    right: 6px;
+    top: 122px;
+}
+
+.time .container .main-right .list ul li .audio::after {
+    background: url("../img/ic_audio.png") center/12px no-repeat;
+}
+
+.time .container .main-right .list ul li .video::after {
+    background: url("../img/ic_video.png") center/12px no-repeat;
+}
+
+
+/* 视频区 video */
+
+.main-video {
+    padding: 40px 0 20px;
+}
+
+.main-video .container .main-right ul li,
+.main-video .container .main-right ul li img {
+    width: 250px;
+}
+
+.main-video .container .main-right ul li {
+    display: inline-block;
+    margin: 0 30px 20px 0;
+    vertical-align: top;
+}
+
+.main-video .container .main-right ul li:last-child {
+    margin-right: 0;
+}
+
+.main-video .container .main-right ul li .pic {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 0;
+}
+
+.main-video .container .main-right ul li .pic::before,
+.main-video .container .main-right ul li .pic::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.main-video .container .main-right ul li .pic::before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.25));
+}
+
+.main-video .container .main-right ul li .pic::after {
+    width: 15px;
+    height: 15px;
+    background: url("../img/play.png") center/15px no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.main-video .container .main-right ul li .pic-title {
+    font-size: 13px;
+    color: #494949;
+    line-height: 1.3;
+}
+
+.main-video .container .main-right ul li .pic-title:hover {
+    color: #fff;
+    background: #37a;
+}
+
+
+/* 电影区 movies */
+
+.movies {
+    background: #f7f7f7;
+    padding: 40px 0 20px 0;
+}
+
+.movies .main-title a,
+.movies .main-title h2 a {
+    color: #27a;
+}
+
+.movies .main-title .title-list {
+    font-size: 14px;
+    /* border: 1px solid #ccc; */
+}
+
+.movies .main-title .title-list li {
+    /* border: 1px solid #333; */
+    padding: 10px 0;
+}
+
+
+/* 影片分类栏 */
+
+.movies .container .main-right .moviecategory {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+    /* border: 1px solid #ccc; */
+}
+
+.movies .container .main-right .moviecategory ul {
+    margin-bottom: 30px;
+}
+
+.movies .container .main-right .moviecategory ul li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 1px 0 0;
+    width: 4em;
+}
+
+.movies .container .main-right .moviecategory ul li a {
+    color: #27a;
+}
+
+.movies .container .main-right .moviecategory ul li a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.movies .container .main-right .moviecategory ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 12px;
+    line-height: 1.62;
+}
+
+.movies .container .main-right .moviecategory ol li a {
+    margin-left: 5px;
+    color: #27a;
+}
+
+.movies .container .main-right .moviecategory ol li a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+
+/* 电影区---热门电影 */
+
+.movies .container .main-right .hotmovies {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+}
+
+.movies .container .main-right .hotmovies ul li {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 39.8px 40px 0;
+}
+
+.movies .container .main-right .hotmovies ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.movies .container .main-right .hotmovies ul li .pic img {
+    width: 100px;
+    height: 140px;
+}
+
+.movies .container .main-right .hotmovies ul li .title a {
+    display: inline-block;
+    width: 100px;
+    color: #494949;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0;
+}
+
+.movies .container .main-right .hotmovies ul li .title a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+.movies .container .main-right .hotmovies ul li .rating {
+    position: relative;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span {
+    color: #e09015;
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+    margin: 5px 0 10px 0;
+    background: url("../img/ic_rating_s.png") left/65px auto no-repeat;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span.si-five {
+    background-position: 5px -39px;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span.seven,
+.movies .container .main-right .hotmovies ul li .rating span.eight {
+    background-position: 5px -26px;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span.six {
+    background-position: 5px -52px;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span.ei-five {
+    background-position: 5px -13px;
+}
+
+.movies .container .main-right .hotmovies ul li .rating span.three {
+    background-position: 5px -91px;
+}
+
+.movies .container .main-right .hotmovies ul li .btn-ticket {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #1c8bd0;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+}
+
+
+/* 脚部区域 footer */
+
+.footer .container {
+    border-top: 1px dashed #dcdcdc;
+    color: #999;
+}
+
+.footer .container .remarklink,
+.footer .container .foot-right {
+    font-size: 12px;
+    margin: 20px 0;
+    padding-bottom: 15px;
+}
+
+.footer .container .remarklink {
+    width: 430px;
+    float: left;
+}
+
+.footer .container a {
+    color: #37a;
+}
+
+.footer .container a:hover {
+    color: #fff;
+    background: #27a;
+}
+
+.footer .container .remarklink span {
+    line-height: 1.62;
+}
+
+.footer .container .remarklink img {
+    height: 13px;
+    vertical-align: middle;
+}
+
+.footer .container .foot-right {
+    margin-left: 537px;
+}
+
+.footer .container .foot-right .reportimg {
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+}
