@@ -1,0 +1,331 @@
+:root {
+    /* 取默认字体的百分比 16px -> 10px */
+    font-size: 62.5% !important;
+}
+
+:root,
+body {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+     :root {
+        font-size: 62.5%;
+    }
+}
+
+@media (min-width: 768px) {
+     :root {
+        font-size: 59%;
+    }
+}
+
+@media (min-width: 576px) {
+     :root {
+        font-size: 56%
+    }
+}
+
+body {
+    overflow-x: hidden!important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 左侧 menu */
+
+.leftCon {
+    left: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+.leftCon header {
+    height: 80px;
+}
+
+header .icon-close {
+    cursor: pointer;
+}
+
+.leftCon header ul a {
+    font-size: 1.6rem;
+}
+
+.login {
+    height: calc(100vh - 80px);
+}
+
+.login .icon-coffee {
+    font-size: 3rem;
+}
+
+.leftCon .register {
+    padding: 2px 15px;
+    border-radius: 2rem;
+    margin-top: -5px;
+}
+
+.login a {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 991.98px) {
+    .leftCon {
+        position: relative!important;
+    }
+    .login {
+        height: auto;
+    }
+}
+
+.leftCon .icon-menu_btn {
+    /* display: inline-block; */
+    font-size: 3rem;
+    cursor: pointer;
+    color: #858585;
+}
+
+.leftCon .icon-menu_btn:hover {
+    color: #555;
+}
+
+.leftCon .menu {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .2s;
+}
+
+.leftCon .menu.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2);
+    z-index: -10;
+}
+
+.leftCon .menu.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.leftCon .menu .list li {
+    font-size: 1.8rem;
+}
+
+.leftCon .menu .list .user-font a {
+    font-size: 1.6rem;
+}
+
+.leftCon .menu footer {
+    font-size: 1.4rem;
+}
+
+.leftCon .menu footer,
+.leftCon .menu footer a {
+    color: rgba(0, 0, 0, .38);
+}
+
+
+/* right Content */
+
+
+/* slide */
+
+#slide .icon-arrow_left,
+#slide .icon-arrow_right {
+    font-size: 6rem;
+}
+
+.star h2 {
+    font-size: 2.2rem;
+}
+
+.star p,
+.star a {
+    font-size: 1.6rem;
+    line-height: 34px;
+}
+
+.star a {
+    color: #c2a661;
+}
+
+.star button {
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+}
+
+.betters h3,
+.teach h3 {
+    font-size: 2.2rem;
+}
+
+.betters p,
+.teach p {
+    font-size: 1.6rem;
+}
+
+.betters li {
+    margin-top: 56px;
+}
+
+.betters li a {
+    transition: .2s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .12);
+}
+
+.betters li a:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .22);
+    transform: translateY(-5px);
+}
+
+.betters li a img {
+    width: 50%;
+    margin-top: -28px;
+}
+
+.betters li a h4 {
+    font-size: 1.6rem;
+}
+
+.betters li a p {
+    font-size: 1.4rem;
+}
+
+.betters p.link_more {
+    font-size: 1, 4rem;
+    color: #C2A661;
+    opacity: .7;
+}
+
+.betters p.link_more:hover {
+    opacity: 1;
+}
+
+
+/* 星讲堂 */
+
+.teach ul {
+    width: 1216px;
+}
+
+.teach ul li {
+    width: 288px;
+}
+
+@media (max-width: 640px) {
+    .teach ul {
+        width: 1072px;
+    }
+    .teach ul li {
+        width: 252px;
+    }
+    footer.r-footer {
+        padding-bottom: 58px;
+    }
+}
+
+.scroll-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll ul {
+    transition: all .5s ease;
+    transform: rotateX(0px);
+}
+
+.scroll li {
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .12);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.scroll li span {
+    font-size: 1.4rem;
+    background-color: #C2A661;
+    left: 0;
+    top: 6px;
+}
+
+.scroll li:hover {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.scroll-wrap span.iconfont {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.scroll-wrap span.icon-arrow_left {
+    left: 24px;
+}
+
+.scroll-wrap span.icon-arrow_right {
+    right: 24px;
+}
+
+.scroll-wrap span.icon-arrow_left:hover {
+    left: 20px;
+}
+
+.scroll-wrap span.icon-arrow_right:hover {
+    right: 20px;
+}
+
+
+/* right footer */
+
+.r-footer {
+    font-size: 1.4rem;
+}
+
+.r-footer img {
+    height: 10px;
+    margin-bottom: 3px;
+}
+
+
+/* footer-nav */
+
+.footer-nav ul {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.footer-nav ul a.active {
+    color: #00a862!important;
+}
+
+.footer-nav ul a .iconfont {
+    font-size: 2.5rem;
+}
+
+
+/* 解决:
+ 由 展示菜单框 transform: scale(2); 
+ 引发的在移动端出现页面右侧大片留白问题
+  */
+
+@media (max-width: 575.98px) {
+    .leftCon {
+        overflow: hidden;
+    }
+}

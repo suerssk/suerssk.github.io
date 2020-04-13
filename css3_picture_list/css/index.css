@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#wrap {
+    /*可视区窗口 : vw 行 ; vh 列 (把可视区分为100等份)*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap ul {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrap ul li {
+    width: 16%;
+    height: 100%;
+    background-color: #444;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width .5s linear, height .5s linear .5s;
+}
+
+#wrap ul li .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    transition: .5s linear;
+}
+
+#wrap ul li:nth-child(1) .inner {
+    transition-delay: 0;
+}
+
+#wrap ul li:nth-child(2) .inner {
+    transition-delay: 0.1s;
+}
+
+#wrap ul li:nth-child(3) .inner {
+    transition-delay: 0.2s;
+}
+
+#wrap ul li:nth-child(4) .inner {
+    transition-delay: 0.3s;
+}
+
+#wrap ul li:nth-child(5) .inner {
+    transition-delay: 0.4s;
+}
+
+#wrap ul li:nth-child(6) .inner {
+    transition-delay: 0.5s;
+}
+
+#wrap ul.init li .inner {
+    transform: translateY(100%);
+}
+
+#wrap ul li .inner .bg {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    opacity: .5;
+    transition: .2s linear;
+}
+
+#wrap ul li:hover .inner .bg {
+    opacity: 1;
+}
+
+#wrap ul li:nth-child(1) .inner .bg {
+    background-image: url(../images/1.jpg);
+}
+
+#wrap ul li:nth-child(2) .inner .bg {
+    background-image: url(../images/2.jpg);
+}
+
+#wrap ul li:nth-child(3) .inner .bg {
+    background-image: url(../images/3.jpg);
+}
+
+#wrap ul li:nth-child(4) .inner .bg {
+    background-image: url(../images/4.jpg);
+}
+
+#wrap ul li:nth-child(5) .inner .bg {
+    background-image: url(../images/5.jpg);
+}
+
+#wrap ul li:nth-child(6) .inner .bg {
+    background-image: url(../images/6.jpg);
+}
+
+#wrap ul li h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 16px;
+    color: #fff;
+    opacity: 1;
+    transition: opacity .2s linear 1s;
+}
+
+#wrap ul li:hover h2 {
+    font-size: 20px;
+}
+
+#wrap ul#activeWrap li h2 {
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#wrap ul li.active {
+    width: 100%;
+}
+
+#wrap ul li.active .bg {
+    opacity: 1;
+}
+
+#activeWrap li:not(.active) {
+    height: 0;
+    width: 0;
+}
+
+#wrap ul#activeWrap li {
+    transition: height .5s linear, width .5s linear .5s;
+}
+
+
+/* dir */
+
+#wrap ul li .inner .direction {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+}
+
+#wrap ul li .inner .direction .header {
+    color: #fff;
+    font-size: 24px;
+}
+
+#wrap ul li .inner .direction .close {
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+#wrap ul li .inner .direction .close::before,
+#wrap ul li .inner .direction .close::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 2px);
+}
+
+#wrap ul li .inner .direction .close::before {
+    transform: rotate(45deg);
+}
+
+#wrap ul li .inner .direction .close::after {
+    transform: rotate(-45deg);
+}
+
+#wrap ul#activeWrap li .inner .direction {
+    opacity: 1;
+    transition: .5s linear 1s;
+}
+
+#wrap ul#activeWrap li .inner .direction .close {
+    transform: rotate(360deg);
+    transition: .5s linear 1s;
+}
